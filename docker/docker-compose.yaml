@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+
+  postgres:
+    image: postgres:13-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: "admin"
+      POSTGRES_PASSWORD: "plano-mestre"
+
+  # localstack:
+  #   container_name: localstack_main
+  #   image: localstack/localstack
+  #   environment:
+  #     - SERVICES=iam,sqs
+  #   ports:
+  #     - "4566:4566"
+
+  # minio:
+  #   image: minio/minio
+  #   container_name: minio-dev
+  #   ports:
+  #     - "9000:9000"
+  #     - "9001:9001"
+  #   environment:
+  #     MINIO_ROOT_USER: "standalone"
+  #     MINIO_ROOT_PASSWORD: "standalone"
+  #   command: "server /data --console-address \":9001\""
