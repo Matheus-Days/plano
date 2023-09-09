@@ -1,0 +1,10 @@
+{
+  "/api/myip/*": {
+    "target": "https://api.myip.com",
+    "secure": false,
+    "pathRewrite": {
+      "^/api/myip": ""
+    },
+    "logLevel": "debug"
+  }
+}
