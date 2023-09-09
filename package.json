@@ -2,7 +2,10 @@
   "name": "@plano/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start:backend": "nx run backend:serve --watch=false",
+    "start:frontend": "nx run frontend:serve"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~16.2.0",
